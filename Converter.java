@@ -23,10 +23,10 @@ public class Converter {
         System.out.println("8. BYN -> USD");
         System.out.println("9. BYN -> EUR");
         System.out.println("10. BYN -> RUB");
-        System.out.print("Выберите операцию (1-10): ");
+        System.out.print("Choose (1-10): ");
 
         int choice = scanner.nextInt();
-        System.out.print("Введите сумму: ");
+        System.out.print("Enter sum: ");
         double amount = scanner.nextDouble();
 
         double result = 0;
@@ -43,11 +43,11 @@ public class Converter {
             case 9 -> result = amount / eurToByn;
             case 10 -> result = amount / rubToByn;
             default -> {
-                System.out.println("Ошибка: неверный выбор операции");
+                System.out.println("Error");
                 return;
             }
         }
 
-        System.out.println("Результат: " + result);
+        System.out.println("Result: " + result);
     }
 }

@@ -12,4 +12,4 @@ out/
 Thumbs.db
 
 # Логи
-*.log
+*.log.idea/
